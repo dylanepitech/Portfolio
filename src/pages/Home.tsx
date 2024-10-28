@@ -1,9 +1,10 @@
 import { ReactElement } from "react";
+import Navbar from "../components/Navbar";
 
 export default function Home(): ReactElement {
   return (
     <>
-      <h1 className="text-black">Home</h1>
+      <Navbar />
     </>
   );
 }
