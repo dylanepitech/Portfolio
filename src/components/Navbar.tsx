@@ -31,7 +31,7 @@ export default function Navbar(): ReactElement {
   ];
 
   return (
-    <nav className="bg-black/90 fixed w-full z-10">
+    <nav className="glassmorphism fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center h-12 md:gap-10">
           <div className="flex items-center">
