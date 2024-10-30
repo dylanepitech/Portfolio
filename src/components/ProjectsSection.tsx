@@ -67,7 +67,9 @@ export default function ProjectsSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-blue-400 transition duration-300"
-                      onClick={(e: any) => e.stopPropagation()}
+                      onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
+                        e.stopPropagation()
+                      }
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -77,7 +79,9 @@ export default function ProjectsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-blue-400 transition duration-300"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
+                          e.stopPropagation()
+                        }
                       >
                         <ExternalLink className="w-5 h-5" />
                       </a>
@@ -106,7 +110,7 @@ export default function ProjectsSection() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <X
-                  color="blue"
+                  color="violet"
                   className="w-6 h-6 hover:cursor-pointer z-20 absolute top-4 right-4"
                   onClick={(): void => setSelectedProject(null)}
                 />
