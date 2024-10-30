@@ -35,3 +35,19 @@ export interface ContactInfo {
   email: string;
   location: string;
 }
+
+export interface ProjectTech {
+  name: string;
+  color: string;
+}
+
+export interface Project {
+  id: number;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  image: string;
+  githubLink: string;
+  demoLink?: string;
+  technologies: ProjectTech[];
+}
