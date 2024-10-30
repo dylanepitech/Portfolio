@@ -18,6 +18,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .glassmorphism {
   background: rgba(24, 0, 0, 0.83); 
   backdrop-filter: blur(10px); 

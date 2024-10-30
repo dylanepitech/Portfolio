@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Code, Briefcase, GraduationCap, Rocket } from "lucide-react";
+import { ParcourItems } from "../utils/interface";
+import { ReactElement } from "react";
 
-export default function ParcoursSection() {
-  const parcours = [
+export default function ParcoursSection(): ReactElement {
+  const parcours: ParcourItems[] = [
     {
       icon: <Briefcase className="w-8 h-8 text-blue-400" />,
       title: "Reconversion Professionnelle",
@@ -30,7 +32,7 @@ export default function ParcoursSection() {
   ];
 
   return (
-    <section className="py-20 bg-black">
+    <section id="ParcoursSection" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +69,7 @@ export default function ParcoursSection() {
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-12 text-center"
         >
-          <blockquote className="text-lg text-left italic text-gray-300 mb-6 border-l-4 border-gray-500 pl-4">
+          <blockquote className="text-lg italic text-gray-300 max-w-2xl mx-auto border-l-4 border-blue-500 pl-4">
             Coder, c’est un peu comme écrire de la poésie : chaque ligne porte
             un morceau d’inspiration, chaque bloc de code raconte une histoire.
           </blockquote>

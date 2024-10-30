@@ -9,23 +9,23 @@ export default function Navbar(): ReactElement {
 
   const linkElements: NavItems[] = [
     {
-      link: "#me",
-      text: "Découvrez-moi",
+      link: "#ParcoursSection",
+      text: "Mon parcours",
     },
     {
-      link: "#histoire",
-      text: "Mon Histoire",
-    },
-    {
-      link: "#competences",
+      link: "#SkillSection",
       text: "Mes Compétences",
+    },
+    {
+      link: "#AboutSection",
+      text: "À Propos de Moi",
     },
     {
       link: "#projets",
       text: "Mes Projets",
     },
     {
-      link: "#contact",
+      link: "#Footer",
       text: "Me Contacter",
     },
   ];
@@ -40,13 +40,13 @@ export default function Navbar(): ReactElement {
           <div className="hidden md:block">
             <div className="flex items-baseline space-x-4">
               {linkElements.map((item: NavItems, index: number) => (
-                <Link
+                <a
                   key={index}
-                  to={item.link}
+                  href={item.link}
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {item.text}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

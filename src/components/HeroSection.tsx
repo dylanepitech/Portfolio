@@ -10,7 +10,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section
+      id="HeroSection"
+      className="relative h-screen flex items-center justify-center overflow-hidden bg-black"
+    >
       {/* Effet de flare pour npm */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500 rounded-full filter blur-[100px] opacity-20 animate-pulse" />
 
