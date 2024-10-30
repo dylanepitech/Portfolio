@@ -14,13 +14,18 @@ export default function Footer(): ReactElement {
   const socialLinks: SocialLink[] = [
     {
       icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/votre-username",
+      href: "https://github.com/dylanepitech",
       label: "GitHub",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
-      href: "https://linkedin.com/in/votre-profile",
+      href: "https://www.linkedin.com/in/dylan-bouraoui-942039259",
       label: "LinkedIn",
+    },
+    {
+      icon: <Mail className="w-5 h-5" />,
+      href: "mailto:dylan.bouraoui@epitech.eu",
+      label: "Mail",
     },
   ];
 
@@ -40,6 +45,10 @@ export default function Footer(): ReactElement {
     {
       link: "AboutSection",
       text: "À Propos de Moi",
+    },
+    {
+      link: "ProjectsSection",
+      text: "Mes projects",
     },
   ];
 

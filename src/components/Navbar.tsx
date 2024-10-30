@@ -21,7 +21,7 @@ export default function Navbar(): ReactElement {
       text: "À Propos de Moi",
     },
     {
-      link: "#projets",
+      link: "#ProjectsSection",
       text: "Mes Projets",
     },
     {
@@ -35,7 +35,9 @@ export default function Navbar(): ReactElement {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center h-12 md:gap-10">
           <div className="flex items-center">
-            <img src={raccoon} alt="Raccoon head" className="h-6 w-6" />
+            <a href="#HeroSection">
+              <img src={raccoon} alt="Raccoon head" className="h-6 w-6" />
+            </a>
           </div>
           <div className="hidden md:block">
             <div className="flex items-baseline space-x-4">

@@ -42,6 +42,7 @@ export default function SkillSection(): ReactElement {
       icon: <Settings className="w-8 h-8 text-green-400" />,
       skills: [
         { name: "Git", level: 85 },
+        { name: "Github / Bitbucket", level: 90 },
         { name: "Docker", level: 80 },
         { name: "VS Code", level: 100 },
         { name: "PHPStorm", level: 100 },

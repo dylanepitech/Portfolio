@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactElement } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-export default function HeroSection() {
+export default function HeroSection(): ReactElement {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -14,7 +14,6 @@ export default function HeroSection() {
       id="HeroSection"
       className="relative h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      {/* Effet de flare pour npm */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500 rounded-full filter blur-[100px] opacity-20 animate-pulse" />
 
       <div className="container mx-auto px-4 z-10">
@@ -25,7 +24,7 @@ export default function HeroSection() {
           className="text-center"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 animate-pulse">
-            Bonjour, je suis <span className="text-white">Dylan Bouraoui</span>
+            Bonjour, je suis <span className="text-white">Dylan</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
             Développeur Full Stack | Créateur d&apos;expériences web uniques
@@ -45,7 +44,7 @@ export default function HeroSection() {
               label="GitHub"
             />
             <SocialLink
-              href="www.linkedin.com/in/dylan-bouraoui-942039259"
+              href="https://www.linkedin.com/in/dylan-bouraoui-942039259"
               icon={<Linkedin className="w-6 h-6" />}
               label="LinkedIn"
             />
@@ -60,7 +59,7 @@ export default function HeroSection() {
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition duration-300"
           >
-            Voir mes projets
+            <a href="#ProjectsSection">Voir mes projets</a>
           </motion.button>
         </motion.div>
       </div>
