@@ -13,8 +13,8 @@ Bienvenue sur mon portfolio personnel ! Ce projet a été développé avec React
 
 Avant de commencer, assurez-vous d'avoir installé :
 
-- Node.js (version 14 ou supérieure)
-- npm ou yarn
+- Node.js (version 18 ou supérieure)
+- npm
 - Docker
 
 ## 🛠 Installation
@@ -28,7 +28,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 2. Naviguez dans le répertoire du projet :
 
    ```
-   cd votre-repo-portfolio
+   cd portfolio
    ```
 
 3. Installez les dépendances :
@@ -58,14 +58,6 @@ Le site sera accessible à l'adresse `http://localhost:5173/`.
 
 Le site sera accessible à l'adresse `http://localhost:5173/`.
 
-## 🧪 Tests
-
-Pour lancer les tests :
-
-```
-npm test
-```
-
 ## 📏 Linting
 
 Pour vérifier le code avec ESLint :
@@ -80,10 +72,11 @@ npm run lint
 src/
 ├── components/
 ├── pages/
-├── styles/
 ├── assets/
+├── utils/
+├── index.css
 ├── App.tsx
-└── index.tsx
+└── main.tsx
 
 ```
 
