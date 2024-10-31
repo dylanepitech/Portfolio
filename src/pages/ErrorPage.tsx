@@ -61,7 +61,7 @@ export default function ErrorPage(): ReactElement {
         <p className="text-gray-400 mb-8 max-w-md mx-auto">
           La page que vous recherchez semble avoir disparu dans le cyberespace.
           Ne vous inquiétez pas, même les meilleurs d&apos;entre nous se perdent
-          parfois.
+          parfois...
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
